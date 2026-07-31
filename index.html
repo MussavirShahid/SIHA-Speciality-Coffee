@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIHA Specialty Coffee | Organic Mobile Coffee Cart in Houston, TX</title>
+<meta name="description" content="SIHA Specialty Coffee is a mobile coffee cart serving Houston, Sugar Land, The Woodlands, Katy, and Pearland with organic, clean-ingredient espresso drinks for weddings, corporate events, and markets.">
+<meta name="keywords" content="mobile coffee cart Houston, organic coffee cart Texas, espresso catering Houston, coffee cart wedding Houston, specialty coffee catering">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.sihaspecialtycoffee.com/">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="SIHA Specialty Coffee | Organic Mobile Coffee Cart in Houston, TX">
+<meta property="og:description" content="Organic, clean-ingredient espresso drinks served from a mobile cart at weddings, corporate events, and markets across Houston and nearby cities.">
+<meta property="og:image" content="assets/hero-caramel.jpg">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="SIHA Specialty Coffee">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SIHA Specialty Coffee | Organic Mobile Coffee Cart in Houston, TX">
+<meta name="twitter:description" content="Organic, clean-ingredient espresso drinks served from a mobile cart across Houston and nearby cities.">
+
+<!-- Structured data for local SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "SIHA Specialty Coffee",
+  "description": "Mobile organic specialty coffee cart serving Houston, Texas and surrounding areas for weddings, corporate events, and markets.",
+  "servesCuisine": "Coffee",
+  "priceRange": "$$",
+  "areaServed": [
+    {"@type": "City", "name": "Houston"},
+    {"@type": "City", "name": "Sugar Land"},
+    {"@type": "City", "name": "The Woodlands"},
+    {"@type": "City", "name": "Katy"},
+    {"@type": "City", "name": "Pearland"}
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Houston",
+    "addressRegion": "TX",
+    "addressCountry": "US"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --white: #ffffff;
+    --cream: #fffaf9;
+    --blush: #fbe9ec;
+    --fuchsia: #9c3642;
+    --fuchsia-dark: #762934;
+    --fuchsia-tint: #e8a0a8;
+    --espresso: #2b1a1c;
+    --ink: #241417;
+    --ink-soft: #5c4a4e;
+    --line: #f0d9e4;
+
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+    --space-5: 48px;
+    --space-6: 64px;
+    --space-7: 96px;
+
+    --radius-sm: 10px;
+    --radius-md: 18px;
+    --radius-lg: 32px;
+
+    --font-display: "Fraunces", Georgia, serif;
+    --font-body: "Manrope", -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+    *{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+  }
+
+  /* Scroll-reveal system */
+  .reveal{
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 600ms cubic-bezier(0.16,1,0.3,1), transform 600ms cubic-bezier(0.16,1,0.3,1);
+  }
+  .reveal.is-visible{ opacity: 1; transform: translateY(0); }
+  .reveal-group.is-visible .reveal-item{ opacity: 1; transform: translateY(0); }
+  .reveal-item{
+    opacity: 0; transform: translateY(20px);
+    transition: opacity 550ms cubic-bezier(0.16,1,0.3,1), transform 550ms cubic-bezier(0.16,1,0.3,1);
+  }
+  .reveal-item:nth-child(1){ transition-delay: 0ms; }
+  .reveal-item:nth-child(2){ transition-delay: 90ms; }
+  .reveal-item:nth-child(3){ transition-delay: 180ms; }
+  .reveal-item:nth-child(4){ transition-delay: 270ms; }
+  .reveal-item:nth-child(5){ transition-delay: 360ms; }
+  .reveal-item:nth-child(6){ transition-delay: 450ms; }
+
+  @keyframes floatY{
+    0%, 100%{ transform: translateY(0); }
+    50%{ transform: translateY(-14px); }
+  }
+  @keyframes heroFadeUp{
+    from{ opacity: 0; transform: translateY(28px); }
+    to{ opacity: 1; transform: translateY(0); }
+  }
+  @keyframes heroArtIn{
+    from{ opacity: 0; transform: scale(0.94); }
+    to{ opacity: 1; transform: scale(1); }
+  }
+
+  body{
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--ink);
+    background: var(--white);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img{ max-width: 100%; display: block; }
+
+  a{ color: inherit; }
+
+  h1, h2, h3{
+    font-family: var(--font-display);
+    color: var(--espresso);
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  .container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 var(--space-3);
+  }
+
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
+    outline: 3px solid var(--fuchsia-dark);
+    outline-offset: 3px;
+  }
+
+  .visually-hidden{
+    position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0,0,0,0); white-space: nowrap;
+  }
+
+  /* Skip link */
+  .skip-link{
+    position: absolute; left: -9999px; top: 0;
+    background: var(--fuchsia); color: white; padding: 12px 20px;
+    z-index: 100; border-radius: 0 0 8px 0;
+  }
+  .skip-link:focus{ left: 0; }
+
+  /* Header */
+  header.site-header{
+    position: sticky; top: 0; z-index: 40;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-row{
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 0;
+  }
+  .brand{
+    display: flex; align-items: center; gap: 10px;
+    text-decoration: none; color: var(--espresso);
+  }
+  .brand-logo{ height: 52px; width: auto; border-radius: 10px; display: block; }
+  nav.primary-nav ul{
+    list-style: none; display: flex; gap: var(--space-4);
+    margin: 0; padding: 0;
+  }
+  nav.primary-nav a{
+    text-decoration: none; font-weight: 600; font-size: 0.95rem;
+    color: var(--ink-soft);
+    padding: 8px 2px;
+    border-bottom: 2px solid transparent;
+  }
+  nav.primary-nav a:hover{ color: var(--fuchsia-dark); border-color: var(--fuchsia); }
+
+  .btn{
+    display: inline-flex; align-items: center; justify-content: center;
+    gap: 8px;
+    min-height: 48px;
+    padding: 12px 26px;
+    border-radius: 999px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 150ms ease, background 150ms ease, color 150ms ease;
+  }
+  .btn-primary{ background: var(--fuchsia); color: white; }
+  .btn-primary:hover{ background: var(--fuchsia-dark); transform: translateY(-1px); }
+  .btn-outline{ background: transparent; color: var(--espresso); border-color: var(--espresso); }
+  .btn-outline:hover{ background: var(--espresso); color: white; }
+
+  .nav-cta{ display: flex; gap: var(--space-2); align-items: center; }
+
+  /* Mobile nav toggle */
+  .nav-toggle{
+    display: none;
+    background: none; border: none; padding: 8px;
+    width: 44px; height: 44px;
+  }
+  .nav-toggle svg{ width: 24px; height: 24px; }
+
+  @media (max-width: 860px){
+    nav.primary-nav{
+      position: absolute; top: 100%; left: 0; right: 0;
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+      display: none;
+      padding: var(--space-3);
+    }
+    nav.primary-nav.open{ display: block; }
+    nav.primary-nav ul{ flex-direction: column; gap: var(--space-2); }
+    .nav-toggle{ display: block; }
+    .nav-cta .btn-outline{ display: none; }
+  }
+
+  /* Hero */
+  .hero{
+    position: relative;
+    padding: var(--space-7) 0 var(--space-6);
+    background: linear-gradient(180deg, var(--blush) 0%, var(--white) 78%);
+    overflow: hidden;
+  }
+  .hero-ring{
+    position: absolute;
+    right: -120px; top: -80px;
+    width: 420px; height: 420px;
+    border-radius: 50%;
+    border: 60px solid var(--fuchsia);
+    opacity: 0.12;
+    animation: floatY 7s ease-in-out infinite;
+  }
+  .hero-grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--space-6);
+    align-items: center;
+  }
+  .hero-copy > *{
+    opacity: 0;
+    animation: heroFadeUp 700ms cubic-bezier(0.16,1,0.3,1) forwards;
+  }
+  .hero-copy > .eyebrow{ animation-delay: 60ms; }
+  .hero-copy > .hero-title{ animation-delay: 160ms; }
+  .hero-copy > .hero-sub{ animation-delay: 260ms; }
+  .hero-copy > .hero-actions{ animation-delay: 360ms; }
+  .hero-copy > .route-ticker{ animation-delay: 460ms; }
+  .hero-art{ animation: heroArtIn 800ms 200ms cubic-bezier(0.16,1,0.3,1) both; }
+  .eyebrow{
+    display: inline-flex; align-items: center; gap: 8px;
+    font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+    font-size: 0.78rem; color: var(--fuchsia-dark);
+    background: white; border: 1px solid var(--line);
+    padding: 6px 14px; border-radius: 999px;
+    margin-bottom: var(--space-3);
+  }
+  .eyebrow .dot{
+    width: 8px; height: 8px; border-radius: 50%; background: var(--fuchsia);
+    animation: pulse 1.8s infinite;
+  }
+  @keyframes pulse{
+    0%, 100%{ opacity: 1; } 50%{ opacity: 0.35; }
+  }
+  h1.hero-title{
+    font-size: clamp(2.4rem, 5vw, 3.7rem);
+    font-weight: 500;
+    margin-bottom: var(--space-3);
+  }
+  h1.hero-title em{
+    font-style: italic; color: var(--fuchsia-dark);
+  }
+  .hero-sub{
+    font-size: 1.15rem; color: var(--ink-soft);
+    max-width: 46ch;
+    margin-bottom: var(--space-4);
+  }
+  .hero-actions{ display: flex; gap: var(--space-2); flex-wrap: wrap; margin-bottom: var(--space-5); }
+
+  /* Route ticker - signature element referencing the mobile cart concept */
+  .route-ticker{
+    background: var(--espresso);
+    border-radius: var(--radius-md);
+    padding: var(--space-3);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    max-width: 560px;
+  }
+  .route-ticker .label{
+    font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--fuchsia-tint); font-weight: 800; white-space: nowrap;
+  }
+  .route-stops{
+    display: flex; gap: var(--space-2); overflow-x: auto; flex: 1;
+    scrollbar-width: thin;
+  }
+  .route-stop{
+    white-space: nowrap; font-size: 0.9rem; font-weight: 600;
+    padding: 6px 14px; border-radius: 999px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.16);
+  }
+  .route-stop.today{ background: var(--fuchsia); border-color: var(--fuchsia); }
+
+  .hero-art{
+    position: relative;
+    aspect-ratio: 4/5;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(155deg, var(--fuchsia) 0%, var(--fuchsia-dark) 100%);
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .hero-art img{ width: 100%; height: 100%; object-fit: cover; }
+  .hero-art .ring-deco{
+    position: absolute; width: 260px; height: 260px; border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.35);
+    z-index: 1; pointer-events: none;
+  }
+
+  @media (max-width: 860px){
+    .hero-grid{ grid-template-columns: 1fr; }
+    .hero-art{ order: -1; aspect-ratio: 16/10; }
+  }
+
+  section{ padding: var(--space-7) 0; }
+  .section-head{ max-width: 640px; margin-bottom: var(--space-5); }
+  .section-head .eyebrow{ background: var(--blush); border-color: var(--line); }
+  h2.section-title{ font-size: clamp(1.9rem, 3.4vw, 2.6rem); font-weight: 500; }
+  .section-lead{ color: var(--ink-soft); font-size: 1.05rem; margin-top: var(--space-2); }
+
+  /* About */
+  .about-wrap{
+    display: grid; grid-template-columns: 0.9fr 1.1fr; gap: var(--space-6); align-items: center;
+  }
+  .about-badge{
+    aspect-ratio: 4/5; border-radius: var(--radius-lg);
+    background: var(--blush);
+    border: 2px solid var(--line);
+    overflow: hidden;
+    max-width: 380px;
+  }
+  .about-badge img{ width: 100%; height: 100%; object-fit: cover; }
+  .about-points{ display: grid; gap: var(--space-3); margin-top: var(--space-4); }
+  .about-point{ display: flex; gap: var(--space-2); align-items: flex-start; }
+  .about-point .icon{
+    flex-shrink: 0; width: 40px; height: 40px; border-radius: 50%;
+    background: var(--fuchsia); color: white;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .about-point .icon svg{ width: 20px; height: 20px; }
+  .about-point h3{ font-size: 1.05rem; font-family: var(--font-body); font-weight: 700; margin-bottom: 2px; }
+  .about-point p{ margin: 0; color: var(--ink-soft); font-size: 0.96rem; }
+
+  @media (max-width: 860px){
+    .about-wrap{ grid-template-columns: 1fr; }
+    .about-badge{ margin: 0 auto; }
+  }
+
+  /* Brewing banner */
+  .brewing-banner{ padding: 0; }
+  .brewing-banner img{
+    width: 100%; max-height: 420px; object-fit: cover; object-position: center 30%;
+    display: block;
+  }
+
+  /* Menu */
+  .menu-section{ background: var(--blush); }
+  .menu-grid{
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3);
+  }
+  .menu-card{
+    background: white; border-radius: var(--radius-md);
+    border: 1px solid var(--line);
+    overflow: hidden;
+    transition: transform 220ms ease, box-shadow 220ms ease;
+  }
+  .menu-card:hover{ transform: translateY(-6px); box-shadow: 0 16px 32px -16px rgba(43,26,28,0.25); }
+  .menu-card-img{ aspect-ratio: 4/3; overflow: hidden; }
+  .menu-card-img img{ width: 100%; height: 100%; object-fit: cover; transition: transform 400ms ease; }
+  .menu-card:hover .menu-card-img img{ transform: scale(1.06); }
+  .menu-card-body{ padding: var(--space-3); }
+  .menu-card .top-row{ display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-2); }
+  .menu-card h3{ font-family: var(--font-body); font-size: 1.05rem; font-weight: 700; }
+  .menu-card .price{ color: var(--fuchsia-dark); font-weight: 800; white-space: nowrap; }
+  .menu-card p{ color: var(--ink-soft); font-size: 0.92rem; margin: 8px 0 0; }
+  .menu-tag{
+    display: inline-block; margin-top: 10px; font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase; color: var(--fuchsia-dark);
+  }
+
+  .flavor-strip{
+    margin-top: var(--space-5);
+    background: white; border: 1px solid var(--line); border-radius: var(--radius-lg);
+    display: grid; grid-template-columns: 0.8fr 1.2fr; align-items: center; overflow: hidden;
+  }
+  .flavor-strip img{ width: 100%; height: 100%; object-fit: cover; max-height: 280px; }
+  .flavor-strip-copy{ padding: var(--space-4); }
+  .flavor-strip-copy h3{ font-family: var(--font-display); font-weight: 500; font-size: 1.4rem; margin-bottom: 8px; }
+  .flavor-strip-copy p{ color: var(--ink-soft); margin: 0; }
+
+  @media (max-width: 860px){
+    .menu-grid{ grid-template-columns: 1fr; }
+    .flavor-strip{ grid-template-columns: 1fr; }
+  }
+
+  /* Shop Beans */
+  .beans-wrap{
+    display: grid; grid-template-columns: 0.8fr 1.2fr; gap: var(--space-6); align-items: center;
+  }
+  .beans-photo{
+    border-radius: var(--radius-lg); overflow: hidden; max-width: 340px;
+    aspect-ratio: 3/4;
+  }
+  .beans-photo img{ width: 100%; height: 100%; object-fit: cover; transition: transform 500ms ease; }
+  .beans-photo:hover img{ transform: scale(1.05); }
+  .bean-card{
+    margin-top: var(--space-4); background: var(--blush); border: 1px solid var(--line);
+    border-radius: var(--radius-md); padding: var(--space-3);
+  }
+  .bean-card .top-row{ display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-2); }
+  .bean-card h3{ font-family: var(--font-body); font-size: 1.05rem; font-weight: 700; }
+  .bean-card .price{ color: var(--fuchsia-dark); font-weight: 800; white-space: nowrap; }
+  .bean-notes{ color: var(--ink-soft); margin: 10px 0 0; font-size: 0.95rem; }
+  .bean-tags{ display: flex; flex-wrap: wrap; gap: 8px; margin-top: var(--space-2); }
+  .bean-tag{
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
+    color: var(--fuchsia-dark); background: white; border: 1px solid var(--line);
+    padding: 5px 12px; border-radius: 999px;
+  }
+
+  @media (max-width: 860px){
+    .beans-wrap{ grid-template-columns: 1fr; }
+    .beans-photo{ margin: 0 auto; }
+  }
+
+  /* Locations */
+  .locations-grid{
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--space-2);
+  }
+  .location-chip{
+    text-align: center; padding: var(--space-3) var(--space-2);
+    border: 1px solid var(--line); border-radius: var(--radius-md);
+    background: var(--cream);
+    transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+  }
+  .location-chip:hover{
+    transform: translateY(-4px);
+    border-color: var(--fuchsia-tint);
+    box-shadow: 0 12px 24px -14px rgba(43,26,28,0.22);
+  }
+  .location-chip .icon{ color: var(--fuchsia); margin-bottom: 8px; }
+  .location-chip .icon svg{ width: 26px; height: 26px; margin: 0 auto; }
+  .location-chip h3{ font-family: var(--font-body); font-size: 0.98rem; font-weight: 700; }
+  .location-chip p{ margin: 4px 0 0; font-size: 0.82rem; color: var(--ink-soft); }
+
+  @media (max-width: 860px){
+    .locations-grid{ grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* Events strip */
+  .events-strip{
+    background: var(--espresso); color: white; border-radius: var(--radius-lg);
+    display: grid; grid-template-columns: 0.9fr 1.1fr; align-items: stretch;
+    overflow: hidden;
+  }
+  .events-photo{ width: 100%; height: 100%; object-fit: cover; max-height: 380px; }
+  .events-copy{ padding: var(--space-5); align-self: center; }
+  .events-strip h2{ color: white; font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 500; max-width: 30ch; }
+  .events-strip p{ color: rgba(255,255,255,0.7); margin-top: 8px; max-width: 42ch; }
+  .events-strip .btn{ margin-top: var(--space-3); }
+
+  @media (max-width: 860px){
+    .events-strip{ grid-template-columns: 1fr; }
+  }
+
+  /* Testimonials */
+  .testi-grid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); }
+  .testi-card{
+    border: 1px solid var(--line); border-radius: var(--radius-md);
+    padding: var(--space-3);
+    transition: transform 220ms ease, box-shadow 220ms ease;
+  }
+  .testi-card:hover{ transform: translateY(-5px); box-shadow: 0 14px 28px -16px rgba(43,26,28,0.2); }
+  .testi-card .stars{ color: var(--fuchsia); letter-spacing: 2px; margin-bottom: 10px; font-size: 0.9rem; }
+  .testi-card p{ color: var(--ink-soft); font-style: italic; }
+  .testi-card footer{ margin-top: var(--space-2); font-weight: 700; font-size: 0.9rem; color: var(--espresso); }
+
+  @media (max-width: 860px){
+    .testi-grid{ grid-template-columns: 1fr; }
+  }
+
+  /* Contact */
+  .contact-section{ background: var(--blush); }
+  .contact-wrap{
+    display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);
+  }
+  .contact-info h3{ font-family: var(--font-body); font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+  .contact-info .info-row{ display: flex; gap: var(--space-2); margin-bottom: var(--space-3); align-items: flex-start; }
+  .contact-info .icon{ color: var(--fuchsia-dark); flex-shrink: 0; }
+  .contact-info .icon svg{ width: 22px; height: 22px; }
+  .contact-info p{ margin: 0; color: var(--ink-soft); }
+
+  form.booking-form{
+    background: white; border-radius: var(--radius-lg); padding: var(--space-4);
+    border: 1px solid var(--line);
+    display: grid; gap: var(--space-3);
+  }
+  .field{ display: grid; gap: 6px; }
+  .field label{ font-weight: 700; font-size: 0.9rem; }
+  .field input, .field select, .field textarea{
+    font-family: var(--font-body); font-size: 1rem;
+    padding: 12px 14px; border-radius: var(--radius-sm);
+    border: 1.5px solid var(--line); background: var(--cream);
+    min-height: 48px;
+  }
+  .field textarea{ min-height: 100px; resize: vertical; }
+  .field input:focus, .field select:focus, .field textarea:focus{
+    border-color: var(--fuchsia); outline: none;
+    box-shadow: 0 0 0 3px rgba(198,0,107,0.15);
+  }
+  .field-row{ display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
+
+  @media (max-width: 860px){
+    .contact-wrap{ grid-template-columns: 1fr; }
+    .field-row{ grid-template-columns: 1fr; }
+  }
+
+  /* Footer */
+  footer.site-footer{
+    background: var(--espresso); color: rgba(255,255,255,0.75);
+    padding: var(--space-6) 0 var(--space-4);
+  }
+  .footer-grid{ display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: var(--space-5); }
+  .footer-brand{ margin-bottom: var(--space-3); }
+  .footer-logo{ height: 60px; width: auto; border-radius: 10px; display: block; }
+  footer h3{ color: white; font-family: var(--font-body); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: var(--space-2); }
+  footer ul{ list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  footer a{ text-decoration: none; color: rgba(255,255,255,0.75); }
+  footer a:hover{ color: white; }
+  .footer-bottom{
+    margin-top: var(--space-5); padding-top: var(--space-3);
+    border-top: 1px solid rgba(255,255,255,0.12);
+    font-size: 0.85rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;
+  }
+
+  @media (max-width: 860px){
+    .footer-grid{ grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="#top" class="brand">
+      <img src="assets/siha-logo.png" alt="SIHA Specialty Coffee" class="brand-logo">
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" id="navToggle">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <span class="visually-hidden">Toggle menu</span>
+    </button>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#beans">Shop Beans</a></li>
+        <li><a href="#locations">Locations</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="tel:+18325550142" class="btn btn-outline">Call Us</a>
+      <a href="#contact" class="btn btn-primary">Book the Cart</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-ring" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot" aria-hidden="true"></span> Mobile Coffee Cart · Houston, TX</span>
+        <h1 class="hero-title">Organic coffee, <em>poured wherever you are.</em></h1>
+        <p class="hero-sub">SIHA Specialty Coffee brings a fully mobile espresso bar to weddings, offices, and markets across Houston — made only with organic, clean-ingredient coffee, milk, and syrups. No fillers, no shortcuts.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Book for Your Event</a>
+          <a href="#menu" class="btn btn-outline">See the Menu</a>
+        </div>
+
+        <div class="route-ticker" role="group" aria-label="Today's cart locations">
+          <span class="label">Today's Route</span>
+          <div class="route-stops">
+            <span class="route-stop today">Midtown Farmers Mkt · 8–11am</span>
+            <span class="route-stop">Sugar Land Town Sq · 12–3pm</span>
+            <span class="route-stop">The Heights Pop-Up · 4–7pm</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="ring-deco" aria-hidden="true"></div>
+        <img src="assets/hero-caramel.jpg" alt="Iced caramel latte in a SIHA Specialty Coffee cup, topped with whipped cream" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-wrap">
+      <div class="about-badge reveal">
+        <img src="assets/about-ingredients.jpg" alt="Fresh organic matcha being poured over ice, made with high quality ingredients" loading="lazy">
+      </div>
+      <div>
+        <span class="eyebrow">Our Story</span>
+        <h2 class="section-title">Clean ingredients. Honest coffee. Zero compromise.</h2>
+        <p class="section-lead">SIHA started with one belief: specialty coffee should taste incredible and be genuinely good for you. Every cup we pour uses certified organic beans, organic dairy and plant milks, and syrups made without artificial additives — sourced and roasted with the same care whether we're set up at your wedding or a Saturday market in Houston.</p>
+
+        <div class="about-points reveal-group">
+          <div class="about-point reveal-item">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <div><h3>100% Organic Sourcing</h3><p>Beans, milk, and syrups are certified organic — no exceptions.</p></div>
+          </div>
+          <div class="about-point reveal-item">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <div><h3>Fully Mobile Setup</h3><p>Our cart runs on battery power, so we can pour anywhere in Houston — indoors or out.</p></div>
+          </div>
+          <div class="about-point reveal-item">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <div><h3>Local & Community First</h3><p>You'll find us at Houston-area markets every week, not just private events.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREWING BANNER -->
+  <section class="brewing-banner reveal">
+    <img src="assets/banner-brewing.jpg" alt="Matcha being whisked in a bowl, with the words: something really amazing is brewing, Siha Specialty Coffee, Houston Texas" loading="lazy">
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Menu</span>
+        <h2 class="section-title">Espresso, made clean</h2>
+        <p class="section-lead">A tight menu, done well — every drink built on organic espresso and finished with your choice of organic whole, oat, or almond milk.</p>
+      </div>
+
+      <div class="menu-grid reveal-group">
+        <div class="menu-card reveal-item">
+          <div class="menu-card-img"><img src="assets/menu-spanish-latte.jpg" alt="Iced Spanish latte in a SIHA cup" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="top-row"><h3>Spanish Latte</h3><span class="price">$6.5</span></div>
+            <p>Organic espresso, steamed organic milk, and sweetened condensed milk for a rich, silky finish.</p>
+            <span class="menu-tag">Signature</span>
+          </div>
+        </div>
+        <div class="menu-card reveal-item">
+          <div class="menu-card-img"><img src="assets/menu-caramel-latte.jpg" alt="Iced caramel latte with whipped cream in a SIHA cup" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="top-row"><h3>Caramel Latte</h3><span class="price">$6.5</span></div>
+            <p>Organic espresso and steamed milk with house caramel, finished with whipped cream.</p>
+            <span class="menu-tag">Best Seller</span>
+          </div>
+        </div>
+        <div class="menu-card reveal-item">
+          <div class="menu-card-img"><img src="assets/menu-matcha.jpg" alt="Iced matcha in a SIHA cup" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="top-row"><h3>Matcha</h3><span class="price">$6</span></div>
+            <p>Organic ceremonial-grade matcha, whisked fresh and poured over organic milk.</p>
+          </div>
+        </div>
+        <div class="menu-card reveal-item">
+          <div class="menu-card-img"><img src="assets/menu-strawberry-matcha.jpg" alt="Strawberry matcha topped with organic strawberry compote" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="top-row"><h3>Strawberry Matcha</h3><span class="price">$6.5</span></div>
+            <p>Organic matcha layered with real strawberry compote, made in-house.</p>
+            <span class="menu-tag">SIHA Original</span>
+          </div>
+        </div>
+        <div class="menu-card reveal-item">
+          <div class="menu-card-img"><img src="assets/menu-caramel-latte.jpg" alt="Caramel matcha in a SIHA cup" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="top-row"><h3>Caramel Matcha</h3><span class="price">$6.5</span></div>
+            <p>Organic matcha and organic milk finished with house caramel.</p>
+          </div>
+        </div>
+        <div class="menu-card reveal-item">
+          <div class="menu-card-img"><img src="assets/menu-caramel-latte.jpg" alt="White mocha latte in a SIHA cup" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="top-row"><h3>White Mocha Latte</h3><span class="price">$6.5</span></div>
+            <p>Organic espresso, organic milk, and a clean white chocolate sauce.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flavor-strip reveal">
+        <img src="assets/flavor-options.jpg" alt="Matcha flavor add-ins: blueberry, white chocolate, and strawberry" loading="lazy">
+        <div class="flavor-strip-copy">
+          <h3>Make it yours</h3>
+          <p>Any matcha on the menu can be finished with real blueberry, white chocolate, or strawberry — no artificial syrups, ever.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP BEANS -->
+  <section id="beans">
+    <div class="container beans-wrap">
+      <div class="beans-photo reveal">
+        <img src="assets/beans-brazilian.jpg" alt="SIHA Specialty Coffee Brazilian medium roast bag, 250g" loading="lazy">
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Take It Home</span>
+        <h2 class="section-title">Shop our beans</h2>
+        <p class="section-lead">Can't catch the cart today? Our organic, sustainably grown beans are bagged and ready — roasted with the same care we put into every cup.</p>
+
+        <div class="bean-card">
+          <div class="top-row"><h3>Brazilian — Medium Roast</h3><span class="price">250g</span></div>
+          <p class="bean-notes"><strong>Notes:</strong> Chocolate, Brown Sugar &amp; Almond</p>
+          <div class="bean-tags">
+            <span class="bean-tag">Ethically Sourced</span>
+            <span class="bean-tag">Sustainably Grown</span>
+            <span class="bean-tag">Crafted For Quality</span>
+            <span class="bean-tag">Made With Care</span>
+          </div>
+          <a href="#contact" class="btn btn-primary" style="margin-top: var(--space-3);">Order a Bag</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATIONS -->
+  <section id="locations">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Where To Find Us</span>
+        <h2 class="section-title">Serving Houston and nearby cities</h2>
+        <p class="section-lead">SIHA's cart travels across the greater Houston area for events, markets, and pop-ups. Don't see your city? Ask — we travel further for private bookings.</p>
+      </div>
+
+      <div class="locations-grid reveal-group">
+        <div class="location-chip reveal-item">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-7.2 7-12a7 7 0 10-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+          <h3>Houston</h3><p>Home base</p>
+        </div>
+        <div class="location-chip reveal-item">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-7.2 7-12a7 7 0 10-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+          <h3>Sugar Land</h3><p>Weekly markets</p>
+        </div>
+        <div class="location-chip reveal-item">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-7.2 7-12a7 7 0 10-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+          <h3>The Woodlands</h3><p>Events & private bookings</p>
+        </div>
+        <div class="location-chip reveal-item">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-7.2 7-12a7 7 0 10-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+          <h3>Katy</h3><p>Corporate catering</p>
+        </div>
+        <div class="location-chip reveal-item">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-7.2 7-12a7 7 0 10-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+          <h3>Pearland</h3><p>Markets & pop-ups</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events">
+    <div class="container">
+      <div class="events-strip">
+        <img src="assets/events-photo.jpg" alt="We would love to serve you — book us for your next event, Houston Texas" class="events-photo" loading="lazy">
+        <div class="events-copy reveal">
+          <span class="eyebrow" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: var(--fuchsia-tint);">Book The Cart</span>
+          <h2>Weddings, offices, and private events across Houston</h2>
+          <p>Tell us your headcount and date — we'll build a drink menu around it, organic ingredients guaranteed.</p>
+          <a href="#contact" class="btn btn-primary">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Kind Words</span>
+        <h2 class="section-title">What Houston is saying</h2>
+      </div>
+      <div class="testi-grid reveal-group">
+        <div class="testi-card reveal-item">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Best latte I've had at a wedding, full stop. Guests kept asking who catered it."</p>
+          <footer>— Priya M., Sugar Land</footer>
+        </div>
+        <div class="testi-card reveal-item">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"You can genuinely taste the difference with organic milk. Booked them for our whole office."</p>
+          <footer>— David R., Katy</footer>
+        </div>
+        <div class="testi-card reveal-item">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"The rose hibiscus latte is unreal. We look for the SIHA cart at the Saturday market every week."</p>
+          <footer>— Ana G., Houston Heights</footer>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="container contact-wrap">
+      <div class="contact-info reveal">
+        <span class="eyebrow">Get In Touch</span>
+        <h2 class="section-title" style="margin-bottom: var(--space-3);">Let's book your date</h2>
+
+        <div class="info-row">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .7 3a2 2 0 01-.5 2.1L8 10.1a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.5c1 .4 2 .6 3 .7a2 2 0 011.6 2z"/></svg></span>
+          <div><h3>Phone</h3><p><a href="tel:+18325550142">(832) 555-0142</a></p></div>
+        </div>
+        <div class="info-row">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg></span>
+          <div><h3>Email</h3><p><a href="mailto:hello@sihaspecialtycoffee.com">hello@sihaspecialtycoffee.com</a></p></div>
+        </div>
+        <div class="info-row">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-7.2 7-12a7 7 0 10-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+          <div><h3>Service Area</h3><p>Houston, Sugar Land, The Woodlands, Katy, Pearland &amp; nearby</p></div>
+        </div>
+      </div>
+
+      <form class="booking-form reveal" aria-label="Booking request form">
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="date">Event date</label>
+            <input id="date" name="date" type="date">
+          </div>
+          <div class="field">
+            <label for="guests">Guest count</label>
+            <input id="guests" name="guests" type="number" min="1" placeholder="e.g. 80">
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Tell us about your event</label>
+          <textarea id="message" name="message" placeholder="Location, timing, any drink requests..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Request Booking</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/siha-logo.png" alt="SIHA Specialty Coffee" class="footer-logo"></div>
+        <p>Organic, clean-ingredient coffee — poured across Houston, one cup at a time.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#events">Events</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="tel:+18325550142">(832) 555-0142</a></li>
+          <li><a href="mailto:hello@sihaspecialtycoffee.com">hello@sihaspecialtycoffee.com</a></li>
+          <li>Houston, TX</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 SIHA Specialty Coffee. All rights reserved.</span>
+      <span>Organic. Mobile. Houston-made.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('primary-nav');
+  toggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Scroll-reveal animations
+  const revealTargets = document.querySelectorAll('.reveal, .reveal-group');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+  revealTargets.forEach(el => revealObserver.observe(el));
+</script>
+
+</body>
+</html>
